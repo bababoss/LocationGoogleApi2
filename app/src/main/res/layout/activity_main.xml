@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.si2chip.locationgoogleapi2.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/title"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:textColor="#e72323"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/user_id"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/device_id"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_updates"
+        android:id="@+id/start_updates_button"
+        android:layout_below="@+id/editText2"
+        android:onClick="startUpdatesButtonHandler"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_updates"
+        android:id="@+id/stop_updates_button"
+        android:onClick="stopUpdatesButtonHandler"
+        android:layout_alignBottom="@+id/start_updates_button"
+        android:layout_toEndOf="@+id/editText2" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin">
+
+                                <TextView
+                                    android:id="@+id/latitude_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/small_margin"
+                                    android:layout_marginStart="@dimen/small_margin"
+                                    android:textSize="@dimen/default_text_size" />
+
+                                <TextView
+                                    android:id="@+id/longitude_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/small_margin"
+                                    android:layout_marginStart="@dimen/small_margin"
+                                    android:textSize="@dimen/default_text_size" />
+
+                                <TextView
+                                    android:id="@+id/speed_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/small_margin"
+                                    android:layout_marginStart="@dimen/small_margin"
+                                    android:textSize="@dimen/default_text_size" />
+                                <TextView
+                                    android:id="@+id/last_update_time_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/small_margin"
+                                    android:layout_marginStart="@dimen/small_margin"
+                                    android:textSize="@dimen/default_text_size" />
+                    </LinearLayout>
+</RelativeLayout>
+
+
+
