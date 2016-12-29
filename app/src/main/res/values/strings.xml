@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Si2chipLocationClientApp</string>
+    <string name="app_name">trackmateClientApp</string>
     <string name="latitude_label">Latitude</string>
     <string name="longitude_label">Longitude</string>
     <string name="speed_label">Speed</string>
@@ -9,7 +9,7 @@
     <string name="stop_updates">Stop updates</string>
     <string name="location_updated_message">Location Updated</string>
 
-    <string name="title">Si2chip Technologies Pvt. Ltd.</string>
+    <string name="title">TrackMate Smart App.</string>
     <string name="user_id">Enter User_ID</string>
     <string name="device_id">Enter Device_ID</string>
 

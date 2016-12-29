@@ -560,7 +560,8 @@ public class MainActivity extends AppCompatActivity implements
                     Toast.LENGTH_SHORT).show();
         }
         if(isNetworkEnabled) {
-            String url = "http://bharatsush.pythonanywhere.com/tracking/";
+            //String url = "http://bharatsush.pythonanywhere.com/tracking/";
+            String url = "http://trackmateproject.herokuapp.com/tracking/";
             if((count*5)%20==0) {
                 Toast.makeText(this, getResources().getString(R.string.location_updated_message),
                         Toast.LENGTH_SHORT).show();
@@ -700,6 +701,8 @@ public class MainActivity extends AppCompatActivity implements
         }
 
     }
+
+
 public void locationDeciceManager(){
     locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
     // getting GPS status
